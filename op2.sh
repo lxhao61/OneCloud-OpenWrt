@@ -86,10 +86,8 @@ rm -rf package/feeds/lienol/luci-app-socat
 # 拉取新的 luci-app-socat
 git clone https://github.com/chenmozhijin/luci-app-socat.git package/chajian/socat
 
-# 替换 tailscale 的默认启动脚本和配置
-sed -i '/\/etc\/init\.d\/tailscale/d;/\/etc\/config\/tailscale/d;' feeds/packages/net/tailscale/Makefile
-# 拉取 luci-app-tailscale
-git clone https://github.com/asvow/luci-app-tailscale.git package/chajian/tailscale/luci-app-tailscale
+# 拉取 luci-app-tailscale-community
+git clone https://github.com/Tokisaki-Galaxy/luci-app-tailscale-community.git package/chajian/tailscale
 
 # 拉取 luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon.git -b master package/chajian/argon/luci-theme-argon
